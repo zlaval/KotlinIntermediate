@@ -14,6 +14,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1")
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.4.0")
+
 
 }
 

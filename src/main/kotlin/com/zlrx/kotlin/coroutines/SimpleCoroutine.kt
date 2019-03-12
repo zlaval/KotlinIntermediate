@@ -9,6 +9,7 @@ const val THRESHOLD = 5000
 
 suspend fun compute(array: IntArray, low: Int, high: Int): Long {
     return if (high - low <= THRESHOLD) {
+        println("$low to $high Calculate on thread ${Thread.currentThread().name}")
         (low until high)
             .map { array[it].toLong() }
             .sum()
